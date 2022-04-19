@@ -1,0 +1,86 @@
+{
+    "title": "ALL Production Kong Services",
+    "graphs": [{
+        "definition": {
+            "title_size": 16,
+            "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+            ],
+            "yaxis": {
+                "scale": "linear",
+                "min": "auto",
+                "label": "",
+                "max": "auto",
+                "includeZero": true
+            },
+            "title_align": "left",
+            "markers": [],
+            "legend_layout": "auto",
+            "show_legend": false,
+            "viz": "timeseries",
+            "requests": [{
+                "formulas": [
+                    { "formula": "query1" },
+                    { "formula": "query2" },
+                    { "formula": "query3" },
+                    { "formula": "query4" },
+                    { "formula": "query5" },
+                    { "formula": "query6" },
+                    { "formula": "query7" },
+                    { "formula": "query8" },
+                    { "formula": "query9" },
+                    { "formula": "query10" }
+                ],
+                "style": {
+                    "palette": "dog_classic",
+                    "width": "normal",
+                    "type": "solid"
+                },
+                "response_format": "timeseries",
+                "queries": [
+                    { "query": "avg:kong.http.status.count{service:prod-srv00070-cross-booking,code:20*}.as_count()", "data_source": "metrics", "name": "query1" },
+                    { "query": "avg:kong.http.status.count{service:prod-srv00035-sales-salesforce-operation,code:20*}.as_count()", "data_source": "metrics", "name": "query2" },
+                    { "query": "avg:kong.http.status.count{service:prod-srv00087-integrations-tracking,code:20*}.as_count()", "data_source": "metrics", "name": "query3" },
+                    { "query": "avg:kong.http.status.count{service:prod-srv00096-pyme2c-tracking,code:20*}.as_count()", "data_source": "metrics", "name": "query4" },
+                    { "query": "avg:kong.http.status.count{service:prod-srv00095-cross-georeferencia,code:20*}.as_count()", "data_source": "metrics", "name": "query5" },
+                    { "query": "avg:kong.http.status.count{service:prod-srv00054-tracking-pull,code:20*}.as_count()", "data_source": "metrics", "name": "query6" },
+                    { "query": "avg:kong.http.status.count{service:prod-srv00098-cross-salida-ruta,code:20*}.as_count()", "data_source": "metrics", "name": "query7" },
+                    { "query": "avg:kong.http.status.count{service:prod-srv00017-fulfill-front-fulfillment,code:20*}.as_count()", "data_source": "metrics", "name": "query8" },
+                    { "query": "avg:kong.http.status.count{service:prod-srv00024-retr-front-contain,code:20*}.as_count()", "data_source": "metrics", "name": "query9" },
+                    { "query": "avg:kong.http.status.count{service:prod-srv00032-pyme2c-payment,code:20*}.as_count()", "data_source": "metrics", "name": "query10" }
+                ],
+                "type": "bars"
+            }]
+        },
+        "title": "test1"
+    }],
+    "dash": {
+        "read_only": false,
+
+        "template_variables": [],
+        "description": "## Solo para pruebas-aopazo",
+
+        "created": "2022-04-19T22:06:13.564490+00:00",
+        "new_id": "96s-akz-ecz",
+        "id": 31750750,
+        "created_by": {
+            "disabled": false,
+            "handle": "absalon.opazo@bx.cl",
+            "name": "Absalón",
+            "title": "",
+            "is_admin": true,
+            "role": "",
+            "access_role": "adm",
+            "verified": true,
+            "email": "absalon.opazo@bx.cl",
+            "icon": "https://secure.gravatar.com/avatar/dc58dfa5259b57ca28f2e12b36afadb9?s=48&d=retro"
+        },
+        "modified": "2022-04-19T22:06:56.521207+00:00"
+    },
+    "url": "/dash/31750750/solo-para-pruebas-aopazo",
+    "resource": "/api/v1/dash/31750750"
+}

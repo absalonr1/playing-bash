@@ -1,0 +1,483 @@
+{
+    "dash": {
+        "read_only": false,
+
+        "template_variables": [],
+        "description": "",
+
+        "created": "2022-04-19T23:26:03.424100+00:00",
+        "new_id": "825-j92-8e9",
+        "id": 31751017,
+        "created_by": {
+            "disabled": false,
+            "handle": "lgsalgado@stefanini.com",
+            "name": null,
+            "title": null,
+            "is_admin": true,
+            "role": null,
+            "access_role": "adm",
+            "verified": true,
+            "email": "lgsalgado@stefanini.com",
+            "icon": "https://secure.gravatar.com/avatar/d4c8ec2d732c28fb300d708645bf5f57?s=48&d=retro"
+        },
+        "modified": "2022-04-19T23:27:31.570184+00:00"
+    },
+    "title": "ALL Production Kong Services - status 50*",
+    "graphs": [{
+            "definition": {
+                "legend_columns": [
+                    "avg",
+                    "min",
+                    "max",
+                    "value",
+                    "sum"
+                ],
+                "yaxis": {
+                    "scale": "linear",
+                    "min": "auto",
+                    "label": "",
+                    "max": "auto",
+                    "includeZero": true
+                },
+                "markers": [],
+                "legend_layout": "auto",
+                "show_legend": true,
+                "time": {},
+                "viz": "timeseries",
+                "requests": [{
+                    "formulas": [
+                        { "formula": "query1" },
+                        { "formula": "query2" },
+                        { "formula": "query3" },
+                        { "formula": "query4" },
+                        { "formula": "query5" },
+                        { "formula": "query6" },
+                        { "formula": "query7" },
+                        { "formula": "query8" },
+                        { "formula": "query9" },
+                        { "formula": "query10" }
+                    ],
+                    "style": {
+                        "palette": "dog_classic",
+                        "width": "normal",
+                        "type": "solid"
+                    },
+                    "response_format": "timeseries",
+                    "queries": [
+                        { "query": "avg:kong.http.status.count{service:prod-srv00070-cross-booking,code:20*}.as_count()", "data_source": "metrics", "name": "query1" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00035-sales-salesforce-operation,code:20*}.as_count()", "data_source": "metrics", "name": "query2" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00087-integrations-tracking,code:20*}.as_count()", "data_source": "metrics", "name": "query3" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00096-pyme2c-tracking,code:20*}.as_count()", "data_source": "metrics", "name": "query4" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00095-cross-georeferencia,code:20*}.as_count()", "data_source": "metrics", "name": "query5" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00054-tracking-pull,code:20*}.as_count()", "data_source": "metrics", "name": "query6" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00098-cross-salida-ruta,code:20*}.as_count()", "data_source": "metrics", "name": "query7" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00017-fulfill-front-fulfillment,code:20*}.as_count()", "data_source": "metrics", "name": "query8" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00024-retr-front-contain,code:20*}.as_count()", "data_source": "metrics", "name": "query9" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00032-pyme2c-payment,code:20*}.as_count()", "data_source": "metrics", "name": "query10" }
+
+                    ],
+                    "type": "bars"
+                }]
+            },
+            "title": "1 - 10"
+        },
+        {
+            "definition": {
+                "legend_columns": [
+                    "avg",
+                    "min",
+                    "max",
+                    "value",
+                    "sum"
+                ],
+                "yaxis": {
+                    "scale": "linear",
+                    "min": "auto",
+                    "label": "",
+                    "max": "auto",
+                    "includeZero": true
+                },
+                "markers": [],
+                "legend_layout": "auto",
+                "show_legend": true,
+                "time": {},
+                "viz": "timeseries",
+                "requests": [{
+                    "formulas": [
+                        { "formula": "query11" },
+                        { "formula": "query12" },
+                        { "formula": "query13" },
+                        { "formula": "query14" },
+                        { "formula": "query15" },
+                        { "formula": "query16" },
+                        { "formula": "query17" },
+                        { "formula": "query18" },
+                        { "formula": "query19" },
+                        { "formula": "query20" }
+                    ],
+                    "style": {
+                        "palette": "dog_classic",
+                        "width": "normal",
+                        "type": "solid"
+                    },
+                    "response_format": "timeseries",
+                    "queries": [
+                        { "query": "avg:kong.http.status.count{service:prod-srv00019-cross-front-contain,code:20*}.as_count()", "data_source": "metrics", "name": "query11" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00008-pyme2c-front-pyme2c,code:20*}.as_count()", "data_source": "metrics", "name": "query12" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00093-cross-movimientos,code:20*}.as_count()", "data_source": "metrics", "name": "query13" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00100-cross-documentos,code:20*}.as_count()", "data_source": "metrics", "name": "query14" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00055-containers-container,code:20*}.as_count()", "data_source": "metrics", "name": "query15" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00012-pyme2c-front-pyme2c,code:20*}.as_count()", "data_source": "metrics", "name": "query16" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00056-salida-backend,code:20*}.as_count()", "data_source": "metrics", "name": "query17" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00067-cross-order,code:20*}.as_count()", "data_source": "metrics", "name": "query18" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00054-cross-pallet,code:20*}.as_count()", "data_source": "metrics", "name": "query19" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00031-containers-socket,code:20*}.as_count()", "data_source": "metrics", "name": "query20" }
+
+                    ],
+                    "type": "bars"
+                }]
+            },
+            "title": "11 -20"
+        },
+        {
+            "definition": {
+                "legend_columns": [
+                    "avg",
+                    "min",
+                    "max",
+                    "value",
+                    "sum"
+                ],
+                "yaxis": {
+                    "scale": "linear",
+                    "min": "auto",
+                    "label": "",
+                    "max": "auto",
+                    "includeZero": true
+                },
+                "markers": [],
+                "legend_layout": "auto",
+                "show_legend": true,
+                "time": {},
+                "viz": "timeseries",
+                "requests": [{
+                    "formulas": [
+                        { "formula": "query21" },
+                        { "formula": "query22" },
+                        { "formula": "query23" },
+                        { "formula": "query24" },
+                        { "formula": "query25" },
+                        { "formula": "query26" },
+                        { "formula": "query27" },
+                        { "formula": "query28" },
+                        { "formula": "query29" },
+                        { "formula": "query30" }
+
+                    ],
+                    "style": {
+                        "palette": "dog_classic",
+                        "width": "normal",
+                        "type": "solid"
+                    },
+                    "response_format": "timeseries",
+                    "queries": [
+                        { "query": "avg:kong.http.status.count{service:prod-srv00020-cross-front-contain,code:20*}.as_count()", "data_source": "metrics", "name": "query21" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00039-integration-meli,code:20*}.as_count()", "data_source": "metrics", "name": "query22" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00066-cross-agency,code:20*}.as_count()", "data_source": "metrics", "name": "query23" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00010-cross-front-pyme2c,code:20*}.as_count()", "data_source": "metrics", "name": "query24" },
+                        { "query": "avg:kong.http.status.count{service:prod-bx-srv-salida-ruta-consulta-zona,code:20*}.as_count()", "data_source": "metrics", "name": "query25" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00033-pyme2c-order,code:20*}.as_count()", "data_source": "metrics", "name": "query26" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00076-cross-tracking,code:20*}.as_count()", "data_source": "metrics", "name": "query27" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00041-cross-account,code:20*}.as_count()", "data_source": "metrics", "name": "query28" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00027-fulfillment-notifications,code:20*}.as_count()", "data_source": "metrics", "name": "query29" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00009-pyme2c-front-pyme2c,code:20*}.as_count()", "data_source": "metrics", "name": "query30" }
+                    ],
+                    "type": "bars"
+                }]
+            },
+            "title": "21 -30"
+        },
+        {
+            "definition": {
+                "legend_columns": [
+                    "avg",
+                    "min",
+                    "max",
+                    "value",
+                    "sum"
+                ],
+                "yaxis": {
+                    "scale": "linear",
+                    "min": "auto",
+                    "label": "",
+                    "max": "auto",
+                    "includeZero": true
+                },
+                "markers": [],
+                "legend_layout": "auto",
+                "show_legend": true,
+                "time": {},
+                "viz": "timeseries",
+                "requests": [{
+                    "formulas": [
+                        { "formula": "query31" },
+                        { "formula": "query32" },
+                        { "formula": "query33" },
+                        { "formula": "query34" },
+                        { "formula": "query35" },
+                        { "formula": "query36" },
+                        { "formula": "query37" },
+                        { "formula": "query38" },
+                        { "formula": "query39" },
+                        { "formula": "query40" }
+                    ],
+                    "style": {
+                        "palette": "dog_classic",
+                        "width": "normal",
+                        "type": "solid"
+                    },
+                    "response_format": "timeseries",
+                    "queries": [
+                        { "query": "avg:kong.http.status.count{service:prod-srv00078-cross-digitacion,code:20*}.as_count()", "data_source": "metrics", "name": "query31" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00047-cross-materials,code:20*}.as_count()", "data_source": "metrics", "name": "query32" },
+                        { "query": "avg:kong.http.status.count{service:prod-bx-srv-integrations-agencies,code:20*}.as_count()", "data_source": "metrics", "name": "query33" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00058-universal-login,code:20*}.as_count()", "data_source": "metrics", "name": "query34" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00049-user-login,code:20*}.as_count()", "data_source": "metrics", "name": "query35" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00094-cross-os-bloqueada,code:20*}.as_count()", "data_source": "metrics", "name": "query36" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00077-cross-emision,code:20*}.as_count()", "data_source": "metrics", "name": "query37" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00057-facturacion-websocket,code:20*}.as_count()", "data_source": "metrics", "name": "query38" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00005-liquidaciones-operation,code:20*}.as_count()", "data_source": "metrics", "name": "query39" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00040-pyme2c-reports,code:20*}.as_count()", "data_source": "metrics", "name": "query40" }
+                    ],
+                    "type": "bars"
+                }]
+            },
+            "title": "31 -40"
+        },
+        {
+            "definition": {
+                "legend_columns": [
+                    "avg",
+                    "min",
+                    "max",
+                    "value",
+                    "sum"
+                ],
+                "yaxis": {
+                    "scale": "linear",
+                    "min": "auto",
+                    "label": "",
+                    "max": "auto",
+                    "includeZero": true
+                },
+                "markers": [],
+                "legend_layout": "auto",
+                "show_legend": true,
+                "time": {},
+                "viz": "timeseries",
+                "requests": [{
+                    "formulas": [
+                        { "formula": "query41" },
+                        { "formula": "query42" },
+                        { "formula": "query43" },
+                        { "formula": "query44" },
+                        { "formula": "query45" },
+                        { "formula": "query46" },
+                        { "formula": "query47" },
+                        { "formula": "query48" },
+                        { "formula": "query49" },
+                        { "formula": "query50" }
+                    ],
+                    "style": {
+                        "palette": "dog_classic",
+                        "width": "normal",
+                        "type": "solid"
+                    },
+                    "response_format": "timeseries",
+                    "queries": [
+                        { "query": "avg:kong.http.status.count{service:prod-srv00003-liq-front-liquidaciones,code:20*}.as_count()", "data_source": "metrics", "name": "query41" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00092-tracking-webhook,code:20*}.as_count()", "data_source": "metrics", "name": "query42" },
+                        { "query": "avg:kong.http.status.count{service:prod-status,code:20*}.as_count()", "data_source": "metrics", "name": "query43" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00036-sales-salesforce-operation,code:20*}.as_count()", "data_source": "metrics", "name": "query44" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00018-fulfill-front-fulfillment,code:20*}.as_count()", "data_source": "metrics", "name": "query45" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00051-tracking-fast,code:20*}.as_count()", "data_source": "metrics", "name": "query46" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00004-fact-front-facturacion,code:20*}.as_count()", "data_source": "metrics", "name": "query47" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00044-cross-print,code:20*}.as_count()", "data_source": "metrics", "name": "query48" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00034-fulfillment-ticket,code:20*}.as_count()", "data_source": "metrics", "name": "query49" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00052-moova-producer,code:20*}.as_count()", "data_source": "metrics", "name": "query50" }
+                    ],
+                    "type": "bars"
+                }]
+            },
+            "title": "41 -50"
+        },
+        {
+            "definition": {
+                "legend_columns": [
+                    "avg",
+                    "min",
+                    "max",
+                    "value",
+                    "sum"
+                ],
+                "yaxis": {
+                    "scale": "linear",
+                    "min": "auto",
+                    "label": "",
+                    "max": "auto",
+                    "includeZero": true
+                },
+                "markers": [],
+                "legend_layout": "auto",
+                "show_legend": true,
+                "time": {},
+                "viz": "timeseries",
+                "requests": [{
+                    "formulas": [
+                        { "formula": "query51" },
+                        { "formula": "query52" },
+                        { "formula": "query53" },
+                        { "formula": "query54" },
+                        { "formula": "query55" },
+                        { "formula": "query56" },
+                        { "formula": "query57" },
+                        { "formula": "query58" },
+                        { "formula": "query59" },
+                        { "formula": "query60" }
+                    ],
+                    "style": {
+                        "palette": "dog_classic",
+                        "width": "normal",
+                        "type": "solid"
+                    },
+                    "response_format": "timeseries",
+                    "queries": [
+                        { "query": "avg:kong.http.status.count{service:prod-srv00030-containers-ack,code:20*}.as_count()", "data_source": "metrics", "name": "query51" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00023-contain-front-contain,code:20*}.as_count()", "data_source": "metrics", "name": "query52" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00013-fulfill-front-fulfillment,code:20*}.as_count()", "data_source": "metrics", "name": "query53" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00038-pyme2c-compensations,code:20*}.as_count()", "data_source": "metrics", "name": "query54" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00011-cross-front-pyme2c,code:20*}.as_count()", "data_source": "metrics", "name": "query55" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00097-cross-planifica-ruta,code:20*}.as_count()", "data_source": "metrics", "name": "query56" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00083-cross-georeference,code:20*}.as_count()", "data_source": "metrics", "name": "query57" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00043-cross-order,code:20*}.as_count()", "data_source": "metrics", "name": "query58" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00007-pyme2c-front-pyme2c,code:20*}.as_count()", "data_source": "metrics", "name": "query59" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00045-cross-tracking,code:20*}.as_count()", "data_source": "metrics", "name": "query60" }
+                    ],
+                    "type": "bars"
+                }]
+            },
+            "title": "51 -60"
+        },
+        {
+            "definition": {
+                "legend_columns": [
+                    "avg",
+                    "min",
+                    "max",
+                    "value",
+                    "sum"
+                ],
+                "yaxis": {
+                    "scale": "linear",
+                    "min": "auto",
+                    "label": "",
+                    "max": "auto",
+                    "includeZero": true
+                },
+                "markers": [],
+                "legend_layout": "auto",
+                "show_legend": true,
+                "time": {},
+                "viz": "timeseries",
+                "requests": [{
+                    "formulas": [
+                        { "formula": "query56" },
+                        { "formula": "query57" },
+                        { "formula": "query58" },
+                        { "formula": "query59" },
+                        { "formula": "query60" },
+                        { "formula": "query66" },
+                        { "formula": "query67" },
+                        { "formula": "query68" },
+                        { "formula": "query69" },
+                        { "formula": "query70" }
+                    ],
+                    "style": {
+                        "palette": "dog_classic",
+                        "width": "normal",
+                        "type": "solid"
+                    },
+                    "response_format": "timeseries",
+                    "queries": [
+                        { "query": "avg:kong.http.status.count{service:prod-srv00042-cross-notifications,code:20*}.as_count()", "data_source": "metrics", "name": "query61" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00080-cross-etiqueta,code:20*}.as_count()", "data_source": "metrics", "name": "query62" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00086-cross-cubicacion,code:20*}.as_count()", "data_source": "metrics", "name": "query63" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00081-problem-solution,code:20*}.as_count()", "data_source": "metrics", "name": "query64" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00048-tracking-pull,code:20*}.as_count()", "data_source": "metrics", "name": "query65" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00037-sales-order,code:20*}.as_count()", "data_source": "metrics", "name": "query66" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00006-pyme2c-front-pyme2c,code:20*}.as_count()", "data_source": "metrics", "name": "query67" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00022-cross-front-contain,code:20*}.as_count()", "data_source": "metrics", "name": "query68" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00021-contain-front-contain,code:20*}.as_count()", "data_source": "metrics", "name": "query69" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00046-logistics-refund,code:20*}.as_count()", "data_source": "metrics", "name": "query70" }
+
+                    ],
+                    "type": "bars"
+                }]
+            },
+            "title": "61 -70"
+        },
+        {
+            "definition": {
+                "legend_columns": [
+                    "avg",
+                    "min",
+                    "max",
+                    "value",
+                    "sum"
+                ],
+                "yaxis": {
+                    "scale": "linear",
+                    "min": "auto",
+                    "label": "",
+                    "max": "auto",
+                    "includeZero": true
+                },
+                "markers": [],
+                "legend_layout": "auto",
+                "show_legend": true,
+                "time": {},
+                "viz": "timeseries",
+                "requests": [{
+                    "formulas": [
+                        { "formula": "query71" },
+                        { "formula": "query72" },
+                        { "formula": "query73" },
+                        { "formula": "query74" },
+                        { "formula": "query75" },
+                        { "formula": "query76" },
+                        { "formula": "query77" }
+                    ],
+                    "style": {
+                        "palette": "dog_classic",
+                        "width": "normal",
+                        "type": "solid"
+                    },
+                    "response_format": "timeseries",
+                    "queries": [
+                        { "query": "avg:kong.http.status.count{service:prod-srv00099-cross-promesa,code:20*}.as_count()", "data_source": "metrics", "name": "query71" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00014-fulfill-front-fulfillment,code:20*}.as_count()", "data_source": "metrics", "name": "query72" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00016-fulfill-front-fulfillment,code:20*}.as_count()", "data_source": "metrics", "name": "query73" },
+                        { "query": "avg:kong.http.status.count{service:prod-bx-srv-universal-app-login,code:20*}.as_count()", "data_source": "metrics", "name": "query74" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00079-cross-digitacionfull,code:20*}.as_count()", "data_source": "metrics", "name": "query75" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00089-cross-recepcion,code:20*}.as_count()", "data_source": "metrics", "name": "query76" },
+                        { "query": "avg:kong.http.status.count{service:prod-srv00053-retrieve-user,code:20*}.as_count()", "data_source": "metrics", "name": "query77" }
+                    ],
+                    "type": "bars"
+                }]
+            },
+            "title": "71 -77"
+        }
+    ],
+    "url": "/dash/31751017/all-production-kong-services",
+    "resource": "/api/v1/dash/31751017"
+}

@@ -1,0 +1,76 @@
+{
+    "title": "Solo para pruebas-aopazo2",
+    "description": "## Solo para pruebas-aopazo2",
+    "widgets": [{
+        "id": 4940704378709443,
+        "definition": {
+            "title": "test12",
+            "title_size": 16,
+            "title_align": "left",
+            "show_legend": false,
+            "legend_layout": "auto",
+            "legend_columns": [
+                "avg",
+                "min",
+                "max",
+                "value",
+                "sum"
+            ],
+            "type": "timeseries",
+            "requests": [{
+                "formulas": [{
+                        "formula": "query1"
+                    },
+                    {
+                        "formula": "query2"
+                    },
+                    {
+                        "formula": "query3"
+                    }
+                ],
+                "response_format": "timeseries",
+                "queries": [{
+                        "query": "avg:kong.http.status.count{service:prod-srv00049-user-login,code:20*}.as_count()",
+                        "data_source": "metrics",
+                        "name": "query1"
+                    },
+                    {
+                        "query": "avg:kong.http.status.count{service:prod-srv00039-integration-meli,code:20*}.as_count()",
+                        "data_source": "metrics",
+                        "name": "query2"
+                    },
+                    {
+                        "query": "avg:kong.http.status.count{service:prod-srv00010-cross-front-pyme2c,code:20*}.as_count()",
+                        "data_source": "metrics",
+                        "name": "query3"
+                    }
+                ],
+                "style": {
+                    "palette": "dog_classic",
+                    "line_type": "solid",
+                    "line_width": "normal"
+                },
+                "display_type": "bars"
+            }],
+            "yaxis": {
+                "include_zero": true,
+                "scale": "linear",
+                "label": "",
+                "min": "auto",
+                "max": "auto"
+            },
+            "markers": []
+        },
+        "layout": {
+            "x": 0,
+            "y": 0,
+            "width": 10,
+            "height": 5
+        }
+    }],
+    "template_variables": [],
+    "layout_type": "ordered",
+    "is_read_only": false,
+    "notify_list": [],
+    "reflow_type": "fixed"
+}
