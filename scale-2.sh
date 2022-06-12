@@ -1,8 +1,10 @@
 #!/bin/bash
-kubectl get ns | awk '{print $1}' | while IFS= read -r line; do
+kubectl get ns --no-headers=true | awk '{print $1}' |  while IFS= read -r line; do
   if [[ $line =~ .*-ns-.* ]]; then
-    #echo "$line matched"
-    echo "kubectl scale deploy -n $line --replicas=0 --all"
+    
+    kubectl get deployment -n $line --no-headers=true | awk '{print $1}' | while IFS= read -r deploy; do
+      kubectl scale deployment $deploy -n $line --replicas=0 --all
+    done
   else
     echo "$line NOT matched"
   fi;
